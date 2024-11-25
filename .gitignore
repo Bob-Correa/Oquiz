@@ -1,2 +1,6 @@
+node_modules
+.env
+.vscode
+.idea
 RECAP-CLASSES.md
 REVISION.md

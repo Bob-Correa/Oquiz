@@ -1,0 +1,66 @@
+{
+  "name": "oquiz",
+  "version": "0.0.1",
+  "description": "une application de quiz",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "watch": "node --watch index.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Skaven/s10.git"
+  },
+  "keywords": ["pg", "oquiz", "ejs", "express", "eslint", "prettier", "node22"],
+  "author": "Oclock-Skaven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Skaven/s10/issues"
+  },
+  "homepage": "https://github.com/O-clock-Skaven/s10#readme",
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "overrides": [
+      {
+        "files": "*.js",
+        "options": {
+          "parser": "babel"
+        }
+      },
+      {
+        "files": "*.json",
+        "options": {
+          "parser": "json",
+          "tabWidth": 2
+        }
+      }
+    ],
+    "semi": true,
+    "requirePragma": false,
+    "proseWrap": "preserve",
+    "arrowParens": "avoid",
+    "htmlWhitespaceSensitivity": "css",
+    "quoteProps": "as-needed"
+  }
+}
