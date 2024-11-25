@@ -14,7 +14,8 @@ Spécification :
 - [x] installer les modules de dèv : `npm i -D nodemon prettier eslint`
 - [x] .gitignore
 - [x] faire les scripts npm
-- [ ] .env et .env.example
+- [x] .env et .env.example
+- [x] branchement de routeur, controlleur, et views
 
 ### prettier
 

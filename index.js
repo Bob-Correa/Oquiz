@@ -2,6 +2,7 @@ import 'dotenv/config';
 import { join } from 'node:path';
 import express from 'express';
 import { router } from './src/router.js';
+import { notFound } from './src/middlewares/errorHandlers/notFound.js';
 
 const app = express();
 
@@ -15,6 +16,9 @@ app.use(express.static(join(import.meta.dirname, 'public')));
 
 // branchement du routeur
 app.use(router);
+
+
+app.use(notFound);
 
 // * app.set : on ajoute un clé sur l'objet app
 app.set('port', process.env.PORT || 3000);
