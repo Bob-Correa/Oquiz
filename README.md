@@ -10,7 +10,8 @@ Le pitch du client :
 
 ### Le plan
 
-1. [ ] user story,
-2. [ ] mcd,
-3. [ ] mld,
-4. [ ] mpd
+1. [x] user story,
+2. [x] wireframes <https://blog-ux.com/quelle-est-la-difference-entre-le-zoning-wireframe-mockup-et-prototype/>,
+3. [ ] mcd,
+4. [ ] mld,
+5. [ ] mpd

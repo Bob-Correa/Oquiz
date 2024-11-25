@@ -25,7 +25,7 @@ Les sprints :
 
 | # | En tant que | je souhaite | afin de | sprint # |
 | --- | --- | --- | --- | --- |
-| 1 | visiteur | une page d'accueil | pouvoir accéder au quiz | 1 |
+| 1 | visiteur | une page d'accueil | pouvoir accéder aux quiz | 1 |
 | 2 | visiteur | visualiser les titres des quiz sur la page d'accueil | pour choisir un quiz | 1 |
 | 3 | visiteur | visualiser les descriptions et auteurs des quiz sur la page d'accueil |  | 1 |
 | 4 | visiteur | visualiser les sujets | pour ne voir que les quiz associés à ce sujet  | 1 |
