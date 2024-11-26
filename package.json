@@ -9,7 +9,10 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "watch": "node --watch index.js"
+    "watch": "node --watch index.js",
+    "create:db": "psql -U oquiz < data/create_tables.sql",
+    "seed:db": "psql -U oquiz < data/seeding.sql",
+    "db:reset": "npm run create:db && npm run seed:db"
   },
   "type": "module",
   "dependencies": {

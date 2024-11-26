@@ -1,0 +1,19 @@
+%%mocodo
+:
+THEME: code_theme, nom
+:
+Appartenir: #code_quiz > QUIZ > code_quiz, _#code_theme > THEME > code_theme
+:
+QUIZ: code_quiz, titre, description, #code_utilisateur > UTILISATEUR > code_utilisateur
+:::
+QUESTION: code_question, titre, wiki, anecdote, #code_quiz > QUIZ > code_quiz, #code_niveau > NIVEAU > code_niveau
+:
+REPONSE: code_réponse, description, est_valide, #code_question > QUESTION > code_question
+:
+
+
+:::
+UTILISATEUR: code_utilisateur, email, prénom, nom, mot_de_passe
+:::
+NIVEAU: code_niveau, nom
+:::::

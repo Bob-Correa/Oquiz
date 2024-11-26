@@ -2,6 +2,8 @@
 
 ---
 
+LIVESHARE https://prod.liveshare.vsengsaas.visualstudio.com/join?A87CFD0AF09483251A7491828DC6AEF4F450
+
 ## Challenge Episode 1
 
 ## Partie 1 - MLD

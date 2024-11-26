@@ -1,0 +1,15 @@
+THEME : code_theme, nom
+Appartenir, 0N QUIZ, 0N THEME
+QUIZ : code_quiz, titre, description
+Contenir, 0N QUIZ, 11 QUESTION
+QUESTION : code_question, titre, wiki, anecdote
+Posséder, 11 REPONSE, 0N QUESTION
+REPONSE : code_réponse, description, est_valide
+
+:
+UTILISATEUR : code_utilisateur, email, prénom, nom, mot_de_passe
+CREER, 0N UTILISATEUR, 11 QUIZ
+NIVEAU : code_niveau, nom
+Déterminer, 11 QUESTION, 0N NIVEAU
+:
+:
