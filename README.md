@@ -10,7 +10,7 @@ En s'inspirant des classes déjà écrites en cours (ex : `Tag` ou `Level`) pour
 **créer les classes pour toutes les entités de notre application !**
 
 - Une classe par entité et par fichier : `Answer`, `Level`, `Question`, `Quiz`, `Tag`, et `User`.
-- Ajouter au dossier `/models`
+- Ajouter au dossier `src/models`
 - Ne pas oublier d'exporter chaque classe.
 - Ne pas oublier les `constructor`s : ils doivent prendre en paramètre un **objet** contenant toutes les valeurs des attributs pour l'instance.
 
@@ -121,7 +121,6 @@ class CoreModel {
 Le même principe est possible dans les constructeurs ! On contrôle les valeurs utilisées par l'appelant à l'instanciation.
 
 </details>
-
 
 ## Challenge Episode 1
 

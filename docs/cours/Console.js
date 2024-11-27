@@ -1,5 +1,5 @@
 // * Console.js doit hériter de Product et représenter les consoles de jeu
-import { Product } from "./Product.js";
+import { Product } from './Product.js';
 
 class Console extends Product {
     maker;
@@ -11,6 +11,12 @@ class Console extends Product {
         this.maker = maker;
         this.frameRate = frameRate;
     }
+
+    // constructor(data) {
+    //     super(data.name, data.priceHT, data.category);
+    //     this.maker = data.maker;
+    //     this.frameRate = data.frameRate;
+    // }
 
     // * un accesseur / getter est une méthode qui retourne des données formattées
     // * un accesseur est une méthode préfixée avec le mot clé get
@@ -31,7 +37,6 @@ console.log(ps5.priceHT);
 ps5.priceHT = 5;
 
 console.log(ps5);
-
 
 // * Quand on veut de servir d'un accesseur, on s'en sert comme d'une propriété classique
 console.log(ps5.manufacturer);
