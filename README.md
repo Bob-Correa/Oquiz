@@ -2,19 +2,36 @@
 
 ---
 
-PLAN DATAMAPPER
+# Challenge Episode 3
 
-- [x] créer user et bdd
-  - [x] `sudo -i -u postgres psql`
-  - [x] `CREATE USER oquiz WITH PASSWORD 'oquiz';`
-  - [x] `CREATE DATABASE oquiz OWNER oquiz;`
-  - [x] `npm run db:reset`
-- [x] installer pg `npm i pg`
-- [x] brancher pg avec express
-  - [x] variable d'environnement
-  - [x] instancier le client pg avec cete variable
-- [ ] créer un dossier datamappers
-  - [ ] créer les datamappers
+## Partie 1
+
+Les méthodes Active Record du modèle `Level` ont été codées 🎉 !
+
+On a pu vérifier que ces méthodes fonctionnent en jouant dans homeController.js.
+
+En s'inspirant (très largement) de ce code existant, on passe à la suite :
+
+**coder les méthodes Active Record du modèle User**
+
+- `findAll()` : trouve tous les Users dans la base de données. (static)
+- `findById(id)` : trouve un User en fonction de son ID. (static)
+- `findByEmail(email)` : trouve un User par son email. (static)
+- `create()` : insert l'instance courante dans la base de données. (static)
+- `update()` : met à jour l'instance courante dans la base de données. (attention, ça peut-être touchy)
+- `destroy()` : supprime l'instance courante de la base de données.
+
+Et on oublie pas de tester ses méthodes et leur bon fonctionnement dans un fichier de test approprié :)
+
+## Partie 2 - Bonus casse-tête
+
+(Attention, très exploratoire !)
+
+On a quand même pas mal de code qui se ressemble, non ? On pourrait commencer à réfléchir à factoriser tout ce beau monde ?
+
+Par exemple la méthode `Level.findAll()` va beaucoup ressembler à celle de `User.findAll()`.
+
+Il doit y avoir moyen de faire quelque chose dans le `CoreModel` !
 
 ---
 

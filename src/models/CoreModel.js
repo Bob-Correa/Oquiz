@@ -1,5 +1,6 @@
 class CoreModel {
     //
+    static table;
     #id;
     created_at;
     updated_at;
