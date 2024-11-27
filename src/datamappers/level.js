@@ -57,19 +57,34 @@ const levelDataMapper = {
         return level;
     },
 
-    async create(data) {
-        //
+    // *
+    async create(name) {
+        const query = {
+            text: 'INSERT INTO level (name) VALUES ($1) RETURNING *',
+            values: [name],
+        };
+
+        const result = await client.query(query);
+
+        if (!result.rowCount) {
+            return null;
+        }
+
+        const level = new Level(result.rows[0]);
+
+        return level;
     },
 
+    // * attention au clés étrangères quand on efface une donnée, postgresql ne nous laisse pas faire si l'id de level est référencé par question
     async destroy(id) {
         const query = {
             text: 'DELETE FROM level WHERE id = $1',
             values: [id],
         };
 
-        const results = await client.query(query);
+        await client.query(query);
 
-        console.log(results);
+        return null;
     },
 };
 

@@ -28,10 +28,10 @@ class User extends CoreModel {
 
 export { User };
 
-const user = new User({
-    firstname: 'superman',
-    lastname: 'kent',
-});
+// const user = new User({
+//     firstname: 'superman',
+//     lastname: 'kent',
+// });
 
-console.log(user);
-console.log(user.fullname);
+// console.log(user);
+// console.log(user.fullname);

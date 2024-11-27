@@ -13,10 +13,10 @@ class Tag extends CoreModel {
 
 export { Tag };
 
-const monTag = new Tag({
-    id: 1,
-    name: 'un super tag',
-    created_at: new Date().toISOString(),
-});
+// const monTag = new Tag({
+//     id: 1,
+//     name: 'un super tag',
+//     created_at: new Date().toISOString(),
+// });
 
-console.log(monTag);
+// console.log(monTag);
