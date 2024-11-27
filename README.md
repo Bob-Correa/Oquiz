@@ -2,6 +2,22 @@
 
 ---
 
+PLAN DATAMAPPER
+
+- [x] créer user et bdd
+  - [x] `sudo -i -u postgres psql`
+  - [x] `CREATE USER oquiz WITH PASSWORD 'oquiz';`
+  - [x] `CREATE DATABASE oquiz OWNER oquiz;`
+  - [x] `npm run db:reset`
+- [x] installer pg `npm i pg`
+- [x] brancher pg avec express
+  - [x] variable d'environnement
+  - [x] instancier le client pg avec cete variable
+- [ ] créer un dossier datamappers
+  - [ ] créer les datamappers
+
+---
+
 ## Challenge Episode 2
 
 ## Partie 1 - Les classes
