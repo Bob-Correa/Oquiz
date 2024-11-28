@@ -19,7 +19,8 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
-    "pg": "^8.13.1"
+    "pg": "^8.13.1",
+    "sequelize": "^6.37.5"
   },
   "devDependencies": {
     "eslint": "^8.57.1",
@@ -30,7 +31,15 @@
     "type": "git",
     "url": "git+https://github.com/O-clock-Skaven/s10.git"
   },
-  "keywords": ["pg", "oquiz", "ejs", "express", "eslint", "prettier", "node22"],
+  "keywords": [
+    "pg",
+    "oquiz",
+    "ejs",
+    "express",
+    "eslint",
+    "prettier",
+    "node22"
+  ],
   "author": "Oclock-Skaven",
   "license": "ISC",
   "bugs": {

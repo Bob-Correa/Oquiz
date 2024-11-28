@@ -2,6 +2,8 @@
 
 ---
 
+- [ ] trouver le mot qui décrit ce qui se passe quand on réplique BDD
+
 # Challenge Episode 3
 
 ## Partie 1
