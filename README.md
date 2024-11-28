@@ -2,7 +2,8 @@
 
 ---
 
-- [ ] trouver le mot qui décrit ce qui se passe quand on réplique BDD
+- [x] trouver le mot qui décrit ce qui se passe quand on réplique BDD : préserver l'intégrité des données
+- [x] CRUD : Create, Read, Update, Delete
 
 # Challenge Episode 3
 
