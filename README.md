@@ -2,8 +2,47 @@
 
 ---
 
+## Challenge Episode 4
+
+On a un super ORM. On est plutôt bien !
+
+On rajouterait pas quelques légumes (modèles) dans notre soupe (O'quiz) ?
+
+## Partie 1
+
+Ajouter les `models` manquants, qui n'ont pas encore été traités en Cockpit :
+
+- `User`
+- `Question`
+- `Answer`
+- `Quiz`
+
+Et on oublie pas de tester ! Par exemple, dans un controlleur qui porte le nom du modèle que l'on teste :
+
+- récupérer toutes les questions.
+- trouver la question dont l'ID est 3.
+- créer un niveau `très difficile` et l'insérer en BDD.
+- …
+
+## Partie 2 - Le BONUS qui pique (facultatif)
+
+Exploratoire, mais sera corrigé !
+
+- **Récupérer une `Question` en incluant son `Level` associé.**
+
+Indices :
+
+- Oui, c'est l'équivalent d'une *jointure* SQL...
+  - mais avec `Sequelize`, c'est vachement moins verbeux !
+- Il faut toutefois mettre en place/déclarer l'association
+  - <https://sequelize.org/docs/v6/core-concepts/assocs/>
+
+---
+
 - [x] trouver le mot qui décrit ce qui se passe quand on réplique BDD : préserver l'intégrité des données
 - [x] CRUD : Create, Read, Update, Delete
+
+---
 
 # Challenge Episode 3
 
@@ -81,12 +120,12 @@ Notes :
 
 ## Partie 2 - Un brin d'héritage
 
-_Do not repeat yourself..._
+*Do not repeat yourself...*
 
 La propriété `id` est présente dans toutes les classes.
 On va donc... la factoriser ! Et pour ce faire, on va utiliser l'héritage !
 
-On propose de créer une classe `CoreModel`, dans le même dossier que les autres, et toutes les classes vont _hériter_ de celle-ci :
+On propose de créer une classe `CoreModel`, dans le même dossier que les autres, et toutes les classes vont *hériter* de celle-ci :
 
 - Penser à exporter `CoreModel`.
 - Penser à require `CoreModel` dans les autres fichiers.
