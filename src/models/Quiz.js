@@ -1,6 +1,7 @@
 import { CoreModel } from './CoreModel.js';
 
 class Quiz extends CoreModel {
+    static table = 'quiz';
     //
     title;
     description;
