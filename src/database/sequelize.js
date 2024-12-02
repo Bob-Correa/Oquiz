@@ -7,9 +7,10 @@ const sequelizeClient = new Sequelize(process.env.PG_URL, {
     define: {
         createdAt: 'created_at',
         updatedAt: 'updated_at',
+        underscored: true,
     },
     // on désactive le console log des requêtes
-    logging: false,
+    // logging: false,
 });
 
 // const sequelizeClient = new Sequelize('oquiz', 'oquiz', 'oquiz', {
