@@ -10,6 +10,7 @@ class Tag extends Model {}
 Tag.init(
     {
         // * définition de l'ID à la main, si on souhaite customiser par rapport à ce que fait sequelize
+        // * facultatif : sequelize nous donne un id autoincrémenté par défaut
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,

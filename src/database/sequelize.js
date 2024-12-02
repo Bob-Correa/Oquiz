@@ -8,6 +8,8 @@ const sequelizeClient = new Sequelize(process.env.PG_URL, {
         createdAt: 'created_at',
         updatedAt: 'updated_at',
     },
+    // on désactive le console log des requêtes
+    logging: false,
 });
 
 // const sequelizeClient = new Sequelize('oquiz', 'oquiz', 'oquiz', {
