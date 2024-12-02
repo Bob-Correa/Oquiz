@@ -5,7 +5,8 @@ import { Quiz } from './Quiz.js';
 import { QuizHasTag } from './QuizHasTag.js';
 import { Tag } from './Tag.js';
 import { User } from './User.js';
-
+// import / export du client pour le mettre au courant que nos modèles sont associés
+import { sequelizeClient } from '../database/sequelize.js';
 // * ici on fait les associations entre chaque modèle
 // ? User et Quiz sont associés : quelle est le type d'association : one to many
 //  l'association one to many
@@ -74,4 +75,13 @@ Tag.belongsToMany(Quiz, {
     as: 'quizzes',
 });
 
-export { Answer, Level, Question, Quiz, Tag, User };
+export {
+    Answer,
+    Level,
+    Question,
+    Quiz,
+    Tag,
+    User,
+    sequelizeClient,
+    QuizHasTag,
+};

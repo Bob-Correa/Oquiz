@@ -1,6 +1,7 @@
 import { DataTypes, Model } from 'sequelize';
 import { sequelizeClient } from '../database/sequelize.js';
-import { Level } from './Level.js';
+//  la ligne ci-dessou n'est utile que si on définit la clé étrangère dans le modèle
+// import { Level } from './Level.js';
 
 class Question extends Model {}
 
@@ -16,6 +17,7 @@ Question.init(
 
         level_id: {
             type: DataTypes.INTEGER,
+            // définition de la clé étrangère dans le modèle
             // references: {
             //     model: Level,
             // },

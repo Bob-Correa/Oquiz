@@ -73,3 +73,75 @@ SELECT
 FROM
     "quiz" AS "Quiz"
     LEFT OUTER JOIN "question" AS "questions" ON "Quiz"."id" = "questions"."quiz_id";
+
+INSERT INTO
+    "user" (
+        "id",
+        "firstname",
+        "lastname",
+        "email",
+        "password",
+        "created_at",
+        "updated_at"
+    )
+VALUES
+    (
+        DEFAULT,
+        'loreznoz',
+        'loreznoz',
+        'email@email.com',
+        'secretpass',
+        '2024-12-02 12:54:06.090 +00:00',
+        '2024-12-02 12:54:06.090 +00:00'
+    ),
+(
+        DEFAULT,
+        'loreznoz',
+        'loreznoz',
+        'email@email.fr',
+        'secretpass',
+        '2024-12-02 12:54:06.090 +00:00',
+        '2024-12-02 12:54:06.090 +00:00'
+    ),
+(
+        DEFAULT,
+        'loreznoz',
+        'loreznoz',
+        'email@email.us',
+        'secretpass',
+        '2024-12-02 12:54:06.090 +00:00',
+        '2024-12-02 12:54:06.090 +00:00'
+    ),
+(
+        DEFAULT,
+        'loreznoz',
+        'loreznoz',
+        'email@email.uk',
+        'secretpass',
+        '2024-12-02 12:54:06.090 +00:00',
+        '2024-12-02 12:54:06.090 +00:00'
+    ),
+(
+        DEFAULT,
+        'loreznoz',
+        'loreznoz',
+        'email@email.ga',
+        'secretpass',
+        '2024-12-02 12:54:06.090 +00:00',
+        '2024-12-02 12:54:06.090 +00:00'
+    ),
+(
+        DEFAULT,
+        'loreznoz',
+        'loreznoz',
+        'email@email.dev',
+        'secretpass',
+        '2024-12-02 12:54:06.090 +00:00',
+        '2024-12-02 12:54:06.090 +00:00'
+    ) RETURNING "id",
+    "firstname",
+    "lastname",
+    "email",
+    "password",
+    "created_at",
+    "updated_at";
