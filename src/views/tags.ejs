@@ -1,0 +1,37 @@
+<%- include('partials/head.ejs') %>
+
+<main class="container py-4">
+
+  <h1>Thèmes</h1>
+
+  <div>
+
+    <% if (locals.tags?.length) { %>
+        <% for( let i = 0; i < tags.length; i++ ) { %>
+
+            <span class="badge bg-primary p-2 mb-1"><%= tags[i].name %></span>
+            <ul>
+                <% if (tags[i].quizzes?.length) { %>
+
+                 <% for( let j = 0; j < tags[i].quizzes.length; j++ ) { %>
+                    <li><a href="/quiz/<%= tags[i].quizzes[j].id %>"><%= tags[i].quizzes[j].title %></a></li>
+                 <% } %>
+
+                <% } else { %>
+                    <li>Ce tag n'est pas associé à un quiz</li>
+                <% } %>
+            </ul>
+
+        <% } %>
+    <% } %>
+
+
+
+    <!-- <span class="badge bg-primary p-2 mb-1">Cuisine</span>
+    <p class="ms-2">Aucun quizz dans cette catégorie pour le moment....</p> -->
+
+  </div>
+
+</main>
+
+<%- include('partials/foot.ejs') %>
