@@ -2,6 +2,24 @@
 
 ---
 
+## Challenge Episode 7 et 8
+
+**Libre !**
+
+- Finir les exercices commencés en Cockpit
+
+- Rajouter des fonctionnalités au choix :
+  - des pages d'éditions pour les `Tag` (similaire aux pages des `Level`)
+  - faire la fonctionnalité de login
+  - faire la fonctionnalité de logout
+  - une gestion plus fine des droits et rôle.
+  - rajouter la fonctionnalité pour **jouer** réellement le quiz et avoir le résultat !
+  - rajouter un champ dans un model :
+    - par exemple, pour pouvoir choisir la couleur des badges des `Level` qui pour le moment sont tous similaires
+  - rajouter un modèle dans notre bazar :
+    - par exemple, pour stocker les résultats des quiz d'un utilisateur et les afficher sur sa page de profil !
+  - _la seule limite est ton `i-m-a-g-i-n-a-t-i-o-n` !_
+
 ## Session
 
 Pour enregistrer un mot de passe en BDD : on la hache (hash)
@@ -114,7 +132,7 @@ Exploratoire, mais sera corrigé !
 
 Indices :
 
-- Oui, c'est l'équivalent d'une *jointure* SQL...
+- Oui, c'est l'équivalent d'une _jointure_ SQL...
   - mais avec `Sequelize`, c'est vachement moins verbeux !
 - Il faut toutefois mettre en place/déclarer l'association
   - <https://sequelize.org/docs/v6/core-concepts/assocs/>
@@ -202,12 +220,12 @@ Notes :
 
 ## Partie 2 - Un brin d'héritage
 
-*Do not repeat yourself...*
+_Do not repeat yourself..._
 
 La propriété `id` est présente dans toutes les classes.
 On va donc... la factoriser ! Et pour ce faire, on va utiliser l'héritage !
 
-On propose de créer une classe `CoreModel`, dans le même dossier que les autres, et toutes les classes vont *hériter* de celle-ci :
+On propose de créer une classe `CoreModel`, dans le même dossier que les autres, et toutes les classes vont _hériter_ de celle-ci :
 
 - Penser à exporter `CoreModel`.
 - Penser à require `CoreModel` dans les autres fichiers.
