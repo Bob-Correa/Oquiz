@@ -9,8 +9,6 @@ const homeController = {
                 include: ['author', 'tags'],
             });
 
-            console.log(quizzes);
-
             res.render('home', { quizzes });
         } catch (error) {
             console.log(error);
