@@ -1,15 +1,7 @@
-import { Question } from '../models/associations.js';
-
 const homeController = {
     //
     async homePage(req, res) {
         try {
-            const question = await Question.findByPk(1, {
-                include: 'level',
-            });
-
-            console.log(question);
-
             res.render('home');
         } catch (error) {
             console.log(error);
