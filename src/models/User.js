@@ -28,6 +28,11 @@ User.init(
                 },
             },
         },
+        role: {
+            type: DataTypes.TEXT,
+            allowNull: false,
+            defaultValue: 'user',
+        },
     },
     {
         sequelize: sequelizeClient,

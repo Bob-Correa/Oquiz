@@ -10,6 +10,7 @@ CREATE TABLE "user" (
   "firstname"   TEXT,
   "lastname"    TEXT,
   "password"    TEXT,
+--   "role"        TEXT NOT NULL DEFAULT 'user',
   "created_at"  TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "updated_at"  TIMESTAMPTZ
 );

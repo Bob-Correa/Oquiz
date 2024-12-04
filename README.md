@@ -1,6 +1,14 @@
-# S11 - Atelier O'quiz
+# S11 - O'quiz
 
 ---
+
+## Session
+
+Pour enregistrer un mot de passe en BDD : on la hache (hash)
+
+- Quand on hash un mot de passe, on ne peut pas le déhasher,hasher est une action irréversible
+- On ne crypte pas qqchose mais on le chiffre, ce qui est chiffré peut être déchiffré
+- On ne dit jamais crypter qqchose <https://chiffrer.info/>
 
 ## Prep work
 

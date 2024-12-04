@@ -15,8 +15,9 @@ router.get('/quiz/:id(\\d+)', quizController.show);
 router.get('/tags', tagController.index);
 
 //  auth
-router.get('/register', registerController.register);
-
+router.get('/register', registerController.showRegisterForm);
+router.post('/register', registerController.register);
+//
 router.get('/login', sessionController.login);
 
 router.use(levelRouter);

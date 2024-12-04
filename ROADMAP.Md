@@ -18,6 +18,9 @@
 
 > Et pourquoi pas une page qui liste les thèmes, et sous chaque thème, un lien vers les quiz qui comportent ces thèmes ?
 
+- <https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#ordering>
+- [x] bonus order by pour l'accueil
+
 - [x] lien vers la page
 - [x] route qui va gérer le lien précédent
 - [x] une méthode / controlleur qui envoie la page au navigateur
@@ -26,3 +29,20 @@
 - [x] on doit récupérer les données
 - [x] on doit récupérer les données avec leur associations éventuels
 - [x] on doit afficher les données sur la page
+
+## Ajout de l'attribut role sur la table
+
+- [x] modifier le mcd
+- [x] modifier le mld
+- [x] modifier la table user
+- [x] modifier le modèle JS
+
+## Créer un User
+
+- [x] récupérer les infos du formulaire de création de compte
+- [x] brancher un middleware dans express pour avoir req.body
+- [ ] valider chaque champ du formulaire (les champs obligatoires doivent être remplis)
+- [ ] valider le format de l'email
+- [ ] valider la longueur du mot de passe
+- [ ] hasher le mot de passe
+- [ ] créer le user en BDD

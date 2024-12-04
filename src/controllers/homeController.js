@@ -6,6 +6,7 @@ const homeController = {
         try {
             const quizzes = await Quiz.findAll({
                 include: ['author', 'tags'],
+                order: [['title', 'ASC']],
             });
 
             res.render('home', { quizzes });

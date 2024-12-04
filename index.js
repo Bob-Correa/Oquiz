@@ -13,7 +13,7 @@ const app = express();
 const inOneDay = 24 * 3600 * 1000;
 app.use(
     session({
-        secret: process.env.secret,
+        secret: process.env.SECRET,
         resave: true,
         saveUninitialized: true,
         cookie: {

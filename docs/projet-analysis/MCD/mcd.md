@@ -35,7 +35,7 @@ Posséder, 11 REPONSE, 0N QUESTION
 REPONSE : code réponse, description, est valide
 
 :
-UTILISATEUR : code utilisateur, email, prénom, nom, mot de passe
+UTILISATEUR : code utilisateur, email, prénom, nom, mot de passe, role
 CREER, 0N UTILISATEUR, 11 QUIZ
 NIVEAU : code niveau, nom
 Déterminer, 11 QUESTION, 0N NIVEAU
