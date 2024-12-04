@@ -21,7 +21,8 @@
 - [x] une méthode / controlleur qui envoie la page au navigateur
 - [x] il faut une vue
 - [x] afficher une page d'accueil
-- [ ] on doit récupérer les quiz
-- [ ] on doit récupérer les quiz avec leur description
-- [ ] on doit récupérer les quiz avec leur description, les auteurs
-- [ ] on doit récupérer les quiz avec leur description, les auteurs et les thèmes
+- [x] on doit récupérer les quiz
+- [x] on doit récupérer les quiz avec leur description
+- [x] on doit récupérer les quiz avec leur description, les auteurs
+- [x] on doit afficher les quiz sur la page d'accueil (s'il y a des quiz)
+- [x] on doit récupérer les quiz avec leur description, les auteurs et les thèmes

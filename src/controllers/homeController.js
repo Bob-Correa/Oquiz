@@ -1,8 +1,17 @@
+import { Quiz } from '../models/associations.js';
+
 const homeController = {
     //
     async homePage(req, res) {
         try {
-            res.render('home');
+            const quizzes = await Quiz.findAll({
+                limit: 3,
+                include: ['author', 'tags'],
+            });
+
+            console.log(quizzes);
+
+            res.render('home', { quizzes });
         } catch (error) {
             console.log(error);
 

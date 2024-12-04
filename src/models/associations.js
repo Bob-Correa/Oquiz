@@ -21,7 +21,7 @@ User.hasMany(Quiz, {
 // la réciproque : la one to one
 Quiz.belongsTo(User, {
     foreignKey: 'user_id',
-    as: 'user',
+    as: 'author',
 });
 
 //  * Question est associé à Answer : one to many
