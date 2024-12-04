@@ -1,4 +1,4 @@
-import { Quiz } from '../models/associations.js';
+import { Quiz } from '../models/index.js';
 
 const quizController = {
     //
@@ -17,8 +17,6 @@ const quizController = {
                     },
                 ],
             });
-
-            console.log(quiz);
 
             if (!quiz) {
                 // va appeler le midlleware suivant : 404

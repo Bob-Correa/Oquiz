@@ -7,8 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
     "watch": "node --watch index.js",
     "create:db": "psql -U oquiz < data/create_tables.sql",
     "seed:db": "psql -U oquiz < data/seeding.sql",
@@ -19,6 +19,7 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
+    "express-session": "^1.18.1",
     "pg": "^8.13.1",
     "sequelize": "^6.37.5"
   },

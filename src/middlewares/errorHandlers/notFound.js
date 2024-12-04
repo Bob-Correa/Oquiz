@@ -1,5 +1,5 @@
 function notFound(req, res) {
-    res.render('404');
+    res.status(404).render('404');
 }
 
-export { notFound }
+export { notFound };

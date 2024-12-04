@@ -16,6 +16,8 @@
 
 > La page d'accueil doit à présent afficher dynamiquement les quiz avec leur description, ainsi que le nom/prénom de leurs auteurs et les thèmes associés au quiz.
 
+> Et pourquoi pas une page qui liste les thèmes, et sous chaque thème, un lien vers les quiz qui comportent ces thèmes ?
+
 - [x] lien vers la page
 - [x] route qui va gérer le lien précédent
 - [x] une méthode / controlleur qui envoie la page au navigateur

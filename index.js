@@ -1,10 +1,29 @@
-import 'dotenv/config';
 import { join } from 'node:path';
+
+import 'dotenv/config';
 import express from 'express';
+import session from 'express-session';
+
 import { router } from './src/routers/router.js';
 import { notFound } from './src/middlewares/errorHandlers/notFound.js';
 
 const app = express();
+
+// cookie expires in ms
+const inOneDay = 24 * 3600 * 1000;
+app.use(
+    session({
+        secret: process.env.secret,
+        resave: true,
+        saveUninitialized: true,
+        cookie: {
+            // pas de https = secure false
+            secure: false,
+            maxAge: inOneDay,
+            httpOnly: true,
+        },
+    })
+);
 
 // branchement du template engine ejs
 app.set('view engine', 'ejs');

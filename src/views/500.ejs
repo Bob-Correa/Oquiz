@@ -3,6 +3,12 @@
 <main class="text-center py-4">
   <h1>Mince...</h1>
   <p>Une erreur serveur sauvage est apparue... Réessaie plus tard 🙏</p>
+
+  <% if (locals.error) { %>
+    <div class="alert alert-danger">
+        <p><%= error %></p>
+    </div>
+  <% } %>
   <p>
     <a href="/">E.T. phone home</a>
   </p>
