@@ -2,6 +2,24 @@
 
 ---
 
+## Challenge Episode 7 et 8
+
+**Libre !**
+
+- Finir les exercices commencés en Cockpit
+
+- Rajouter des fonctionnalités au choix :
+  - des pages d'éditions pour les `Tag` (similaire aux pages des `Level`) (en se servant des middlewares et de la gestion d'erreur)
+  - une gestion plus fine des droits et rôle. (refaire le mcd pour avoir une table permission et table role)
+  - rajouter la fonctionnalité pour **jouer** réellement le quiz et avoir le résultat !
+  - rajouter un champ dans un model :
+    - par exemple, pour pouvoir choisir la couleur des badges des `Level` qui pour le moment sont tous similaires
+  - rajouter un modèle dans notre bazar :
+    - par exemple, pour stocker les résultats des quiz d'un utilisateur et les afficher sur sa page de profil !
+  - _la seule limite est ton `i-m-a-g-i-n-a-t-i-o-n` !_
+
+---
+
 ## Mise en place d'un WORKFLOW git & github
 
 - [x] afficher les erreurs liés à la création de compte
@@ -28,24 +46,6 @@ on doit manipuler les données d'un formulaire et décider si on est ok ou non p
 on démarre une session si étape précédente répond ok, sinon on rejette
 
 ---
-
-## Challenge Episode 7 et 8
-
-**Libre !**
-
-- Finir les exercices commencés en Cockpit
-
-- Rajouter des fonctionnalités au choix :
-  - des pages d'éditions pour les `Tag` (similaire aux pages des `Level`)
-  - faire la fonctionnalité de login
-  - faire la fonctionnalité de logout
-  - une gestion plus fine des droits et rôle.
-  - rajouter la fonctionnalité pour **jouer** réellement le quiz et avoir le résultat !
-  - rajouter un champ dans un model :
-    - par exemple, pour pouvoir choisir la couleur des badges des `Level` qui pour le moment sont tous similaires
-  - rajouter un modèle dans notre bazar :
-    - par exemple, pour stocker les résultats des quiz d'un utilisateur et les afficher sur sa page de profil !
-  - _la seule limite est ton `i-m-a-g-i-n-a-t-i-o-n` !_
 
 ## Session
 
