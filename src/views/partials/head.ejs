@@ -35,7 +35,11 @@
             <a href="/" class="h3 text-white text-decoration-none">O'quiz</a>
             <nav class="my-1">
                 <a class="p-2 text-white" href="/">Accueil</a>
-                <a class="p-2 text-white" href="/levels">Levels</a>
+
+                <% if (locals.user?.role === 'admin') { %>
+                    <a class="p-2 text-white" href="/levels">Levels</a>
+                <% } %>
+
                 <a class="p-2 text-white" href="/tags">Sujets</a>
 
                 <% if (locals.user) { %>
