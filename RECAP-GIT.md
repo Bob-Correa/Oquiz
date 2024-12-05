@@ -9,7 +9,7 @@
 | git add .                                                            | Ajoute tous les fichiers à notre historique                                                                             |
 | git rm --cached index.html                                           | Efface le fichier index.html de notre historique                                                                        |
 | git branch -M main                                                   | Renommer la branche principale.                                                                                         |
-| git remote add origin <https://github.com/Kenshirosan/learn-git.git> | Ajouter l'url github de notre repository                                                                                |
+| git remote add origin <URL>                                          | Ajouter l'url github de notre repository                                                                                |
 | git push -u origin main                                              | Premier push sur une branche distante (qui est ailleurs qu'en local)                                                    |
 | git push                                                             | Commande pour envoyer le code sur github : commande disponible après la commande précédente.                            |
 | git commit -m 'Add README'                                           | Effectuer un commit avec un message (Message obligatoire)                                                               |
