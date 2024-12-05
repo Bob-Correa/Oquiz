@@ -60,7 +60,7 @@ const registerController = {
         //  si on a rencontré des erreurs : on les envoie à la vue
         // todo : afficher les erreurs
         if (errors.length) {
-            return res.render('register', { errors });
+            return res.status(400).render('register', { errors });
         }
 
         // - [x] hasher le mot de passe

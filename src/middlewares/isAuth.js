@@ -4,6 +4,7 @@ function isAuth(req, res, next) {
         return next();
     }
 
+    //  ? devrait-on renvoyer une erreur  ?
     return res.redirect('/');
 }
 

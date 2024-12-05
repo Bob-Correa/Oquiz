@@ -7,6 +7,7 @@ import session from 'express-session';
 import { router } from './src/routers/router.js';
 import { notFound } from './src/middlewares/errorHandlers/notFound.js';
 import { initUserSession } from './src/middlewares/initUserSession.js';
+import { errorHandler } from './src/middlewares/errorHandlers/handlers.js';
 
 const app = express();
 
@@ -46,6 +47,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(router);
 
 app.use(notFound);
+
+app.use(errorHandler);
 
 // * app.set : on ajoute un clé sur l'objet app
 app.set('port', process.env.PORT || 3000);
