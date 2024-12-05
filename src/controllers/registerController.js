@@ -60,8 +60,6 @@ const registerController = {
         //  si on a rencontré des erreurs : on les envoie à la vue
         // todo : afficher les erreurs
         if (errors.length) {
-            console.log(errors);
-
             return res.render('register', { errors });
         }
 

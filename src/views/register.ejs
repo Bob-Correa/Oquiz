@@ -5,9 +5,16 @@
   <h1>Inscription</h1>
 
   <!-- Toast en cas d'erreur -->
-  <!-- <div class="alert alert-danger" role="alert">
-    Une erreur s'est produite lors de l'inscription.
-  </div> -->
+   <% if (locals.errors?.length) { %>
+    <% for( let i = 0; i < errors.length; i++ ) { %>
+
+        <div class="alert alert-danger" role="alert">
+          <%= errors[i] %>
+        </div>
+
+    <% } %>
+   <% } %>
+
 
   <form action="/register" method="POST">
     <label class="form-label h4" for="firstname">Prénom</label>
