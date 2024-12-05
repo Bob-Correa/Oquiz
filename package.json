@@ -12,7 +12,8 @@
     "watch": "node --watch index.js",
     "create:db": "psql -U oquiz < data/create_tables.sql",
     "seed:db": "psql -U oquiz < data/seeding.sql",
-    "db:reset": "npm run create:db && npm run seed:db"
+    "update:user": "psql -U oquiz < data/update-user-table.sql",
+    "db:reset": "npm run create:db && npm run seed:db && npm run update:user"
   },
   "type": "module",
   "dependencies": {
@@ -21,6 +22,7 @@
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "express-session": "^1.18.1",
+    "password-validator": "^5.3.0",
     "pg": "^8.13.1",
     "sequelize": "^6.37.5"
   },

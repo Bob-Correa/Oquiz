@@ -34,6 +34,7 @@ class Scrypt {
             N: 131072,
             maxmem: 134220800,
         });
+
         // On compare les deux mots de passe avec timingSafeEqual (voir la doc, lien ci-dessus)
         return timingSafeEqual(hashedPasswordBuf, clearPasswordBuffer);
     }

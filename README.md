@@ -4,9 +4,28 @@
 
 ## Mise en place d'un WORKFLOW git & github
 
-- [ ] afficher les erreurs liés à la création de compte
+- [x] afficher les erreurs liés à la création de compte
   - [x] on doit aller lire les issues
+  - [x] on a choisi (ou on nous a imposé une issue)
   - [x] créer une branche avec git et l'envoyer sur github [voir recap](RECAP-GIT.md)
+  - [x] on a envoyé notre travail sur github
+  - [x] le boss fait un code review
+    - [x] il passe la carte du backlog en in review
+      - si ça convient il garde
+      - sinon il rejette
+
+---
+
+## Faire le login
+
+1. créer le monde : besoin d'un contexte, de variables
+lien, route, vue
+
+2. le calcul de la fonctionnalité
+on doit manipuler les données d'un formulaire et décider si on est ok ou non pour connecter le user
+
+3. le résultat de ce calcul
+on démarre une session si étape précédente répond ok, sinon on rejette
 
 ---
 

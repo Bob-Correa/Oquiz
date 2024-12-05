@@ -18,7 +18,8 @@ router.get('/tags', tagController.index);
 router.get('/register', registerController.showRegisterForm);
 router.post('/register', registerController.register);
 //
-router.get('/login', sessionController.login);
+router.get('/login', sessionController.showLoginForm);
+router.post('/login', sessionController.login);
 
 router.use(levelRouter);
 
