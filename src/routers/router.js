@@ -26,6 +26,7 @@ router.post('/login', sessionController.login);
 
 // route auth
 router.get('/profile', isAuth, userController.show);
+router.get('/logout', isAuth, sessionController.destroy);
 
 router.use(levelRouter);
 

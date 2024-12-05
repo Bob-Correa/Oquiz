@@ -83,6 +83,14 @@ const sessionController = {
 
         return res.redirect('/');
     },
+
+    destroy(req, res) {
+        delete req.session.user;
+
+        req.session.destroy();
+
+        res.redirect('/');
+    },
 };
 
 export { sessionController };
