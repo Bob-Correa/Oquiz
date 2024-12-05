@@ -20,7 +20,7 @@ const levelController = {
         res.render('levels', { levels });
     },
 
-    async show(req, res) {
+    async show(req, res, next) {
         //
         const { id } = req.params;
 
@@ -31,6 +31,10 @@ const levelController = {
         const level = await Level.findOne({
             where: { id: id },
         });
+
+        if (!level) {
+            return next();
+        }
 
         res.render('level', { level });
     },
@@ -44,7 +48,7 @@ const levelController = {
         res.redirect('/levels');
     },
 
-    async update(req, res) {
+    async update(req, res, next) {
         const { id } = req.params;
         const { name } = req.body;
 
@@ -64,6 +68,9 @@ const levelController = {
         // * on récupère le niveau à mettre à jour ( commun au deux façons de faire suivante )
 
         const level = await Level.findByPk(id);
+        if (!level) {
+            return next();
+        }
         // on change l'attibute explicitement
         // level.name = name;
         // on sauvegarde le modèle

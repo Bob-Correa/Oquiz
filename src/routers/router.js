@@ -9,24 +9,25 @@ import { registerController } from '../controllers/registerController.js';
 import { sessionController } from '../controllers/sessionController.js';
 import { userController } from '../controllers/userController.js';
 import { isAuth } from '../middlewares/isAuth.js';
+import { catchErrors } from '../middlewares/errorHandlers/handlers.js';
 
-router.get('/', homeController.homePage);
+router.get('/', catchErrors(homeController.homePage));
 
-router.get('/quiz/:id(\\d+)', quizController.show);
+router.get('/quiz/:id(\\d+)', catchErrors(quizController.show));
 
-router.get('/tags', tagController.index);
+router.get('/tags', catchErrors(tagController.index));
 
 // *  auth : les 4 routes suivantes devraient être inaccessible si on est connecté
 // todo : un middleware qui bloque l'accès aux 4 routes suivantes
-router.get('/register', registerController.showRegisterForm);
-router.post('/register', registerController.register);
+router.get('/register', catchErrors(registerController.showRegisterForm));
+router.post('/register', catchErrors(registerController.register));
 //
-router.get('/login', sessionController.showLoginForm);
-router.post('/login', sessionController.login);
+router.get('/login', catchErrors(sessionController.showLoginForm));
+router.post('/login', catchErrors(sessionController.login));
 
 // route auth
-router.get('/profile', isAuth, userController.show);
-router.get('/logout', isAuth, sessionController.destroy);
+router.get('/profile', isAuth, catchErrors(userController.show));
+router.get('/logout', isAuth, catchErrors(sessionController.destroy));
 
 router.use(levelRouter);
 

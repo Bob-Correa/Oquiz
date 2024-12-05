@@ -69,7 +69,7 @@ const sessionController = {
         }
 
         if (errors.length) {
-            return res.render('login', { errors });
+            return res.status(400).render('login', { errors });
         }
 
         // si mot de passe valide : démarrer session
