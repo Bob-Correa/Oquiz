@@ -2,6 +2,14 @@
 
 ---
 
+## Mise en place d'un WORKFLOW git & github
+
+- [ ] afficher les erreurs liés à la création de compte
+  - [ ] on doit aller lire les issues
+  - [ ] créer une branche avec git et l'evoyer sur github
+
+---
+
 ## Challenge Episode 7 et 8
 
 **Libre !**
