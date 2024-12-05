@@ -18,11 +18,11 @@ TRUNCATE TABLE "level",
 
 -- ----------------------------------------
 -- Déchargement des données de la table "user"
+-- Note : le mot de passe haché (avec scrypt) est 'Pa$$w0rd!' ici ;-)
 -- ----------------------------------------
 INSERT INTO "user" ("id", "firstname", "lastname", "email", "password") VALUES
-(1, 'Philippe', 'Candille', 'philippe@oclock.io', '$2b$10$7vwYGrz2TGeyG4X8YnD9BOag9I.YKGUTJELs64qGmcK/syHu2BzTG'),
-(3, 'Chuck', 'Norris', 'chuck@oclock.io', '$2b$10$7vwYGrz2TGeyG4X8YnD9BOag9I.YKGUTJELs64qGmcK/syHu2BzTG');
--- Note : le mot de passe haché (avec bcrypt) est 'password' ici ;-)
+(1, 'Philippe', 'Candille', 'philippe@oclock.io', '234c1a94711f272520c1a311615fd61a83a4c68a422b691815c6b4885b0b9fac3aaae355e7a23ef304f82ea3c5cbbee5e5dae702667f93e36bd2167ebd28a2de.2ffab3d64bf5c9bc9b46c6e509c65ca5'),
+(3, 'Chuck', 'Norris', 'chuck@oclock.io', '234c1a94711f272520c1a311615fd61a83a4c68a422b691815c6b4885b0b9fac3aaae355e7a23ef304f82ea3c5cbbee5e5dae702667f93e36bd2167ebd28a2de.2ffab3d64bf5c9bc9b46c6e509c65ca5');
 
 
 
