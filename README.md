@@ -5,8 +5,8 @@
 ## Mise en place d'un WORKFLOW git & github
 
 - [ ] afficher les erreurs liés à la création de compte
-  - [ ] on doit aller lire les issues
-  - [ ] créer une branche avec git et l'evoyer sur github
+  - [x] on doit aller lire les issues
+  - [x] créer une branche avec git et l'envoyer sur github [voir recap](RECAP-GIT.md)
 
 ---
 
