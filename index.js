@@ -6,6 +6,7 @@ import session from 'express-session';
 
 import { router } from './src/routers/router.js';
 import { notFound } from './src/middlewares/errorHandlers/notFound.js';
+import { initUserSession } from './src/middlewares/initUserSession.js';
 
 const app = express();
 
@@ -24,6 +25,8 @@ app.use(
         },
     })
 );
+
+app.use(initUserSession);
 
 // branchement du template engine ejs
 app.set('view engine', 'ejs');

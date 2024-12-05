@@ -37,8 +37,14 @@
                 <a class="p-2 text-white" href="/">Accueil</a>
                 <a class="p-2 text-white" href="/levels">Levels</a>
                 <a class="p-2 text-white" href="/tags">Sujets</a>
-                <a class="p-2 text-white" href="/register">S'inscrire</a>
-                <a class="p-2 text-white" href="/login">Se connecter</a>
+
+                <% if (locals.user) { %>
+                    <a class="p-2 text-white" href="/profile">Profil</a>
+                <% } else { %>
+                    <a class="p-2 text-white" href="/register">S'inscrire</a>
+                    <a class="p-2 text-white" href="/login">Se connecter</a>
+                <% }  %>
+
             </nav>
         </header>
 

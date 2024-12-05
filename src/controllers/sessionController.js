@@ -78,6 +78,7 @@ const sessionController = {
         // effacer le mot de passe de l'objet user
         delete user.dataValues.password;
 
+        // * après cette ligne : le user est connecté
         req.session.user = user.dataValues;
 
         return res.redirect('/');
