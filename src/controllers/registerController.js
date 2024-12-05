@@ -34,19 +34,31 @@ const registerController = {
             errors.push("Le format de l'email est invalide");
         }
 
+        // ! vérifier si user existe
+        const user = await User.findOne({
+            where: { email: email },
+        });
+
+        if (user) {
+            errors.push("L'email est invalide");
+        }
+
         if (!password || !confirmation) {
             errors.push('Les champs mot de passe sont obligatoires');
         }
 
-        if (password === confirmation) {
+        // ici here lies the connerie du siècle
+        if (password !== confirmation) {
             errors.push('Les mot de passe ne sont pas identiques');
         }
+
         // - [x] valider la longueur du mot de passe
         if (password.length < registerController.passwordMinLenth) {
             errors.push('Le mot de passe doit contenir 8 caractères minimum');
         }
 
         //  si on a rencontré des erreurs : on les envoie à la vue
+        // todo : afficher les erreurs
         if (errors.length) {
             console.log(errors);
 
