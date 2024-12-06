@@ -16,6 +16,8 @@ function catchErrors(funcToExecute) {
 function errorHandler(err, req, res, next) {
     const status = err.statusCode || 500;
 
+    console.log(err);
+
     res.status(status).render(status.toString(), { error: err });
 }
 
